@@ -1,0 +1,8 @@
+inherit kde3
+
+DESCRIPTION="KDE FTP client"
+HOMEPAGE="http://kuftp.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P/_/-}.tar.gz"
+SRC_DIR="${P/_/-}"
+
+CPPFLAGS+=" -Doff64_t=long"
